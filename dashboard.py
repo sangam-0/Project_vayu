@@ -83,11 +83,11 @@ def gauge(v, title, color, rng):
     return go.Figure(go.Indicator(
         mode="gauge+number",
         value=v,
-        title={"text": title, "font": {"size": 12}},  # ✅ FIXED
+        title={"text": title, "font": {"size": 12}},  # FIXED
         gauge={"axis":{"range":rng},"bar":{"color":color}}
     )).update_layout(
         height=210,
-        margin=dict(t=60,b=10,l=10,r=10)  # ✅ FIXED spacing
+        margin=dict(t=60,b=10,l=10,r=10)  # FIXED spacing
     )
 
 # ================= SMALL GRAPH =================
@@ -116,7 +116,7 @@ app.layout = html.Div(
         style={
             "textAlign": "center",
             "color": "white",
-            "marginBottom": "25px",  # ✅ FIXED
+            "marginBottom": "25px",  # FIXED
             "marginTop": "10px"
         }
     ),
